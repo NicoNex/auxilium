@@ -214,7 +214,6 @@ public class TunerFragment extends Fragment {
 
                 View settingsItem = popupView.findViewById(R.id.menu_item_settings);
                 View aboutItem = popupView.findViewById(R.id.menu_item_help);
-                View privacyItem = popupView.findViewById(R.id.menu_item_privacy);
                 // Do your customised stuff
 
                 final PopupWindow popupWindow = new PopupWindow(
@@ -238,14 +237,6 @@ public class TunerFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         Uri uri = Uri.parse(getString(R.string.url_about));
-                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        startActivity(intent);
-                    }
-                });
-                privacyItem.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Uri uri = Uri.parse(getString(R.string.url_privacy));
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                         startActivity(intent);
                     }

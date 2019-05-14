@@ -1,11 +1,8 @@
 package com.filipetrovic.auxilium;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-
-import com.filipetrovic.auxilium.Dialog.AlertDialog;
 
 public class SettingsActivity extends AppCompatActivity {
 
