@@ -25,6 +25,9 @@ the tuner</string>
     <string name="pref_suppressor_summary">Enable or disable noise cancellation
 for loud environments</string>
 
+    <!-- Bottom bar for picking the tuner mode -->
+    <string name="tuner_mode_title">Pick tuner mode</string>
+
     <string name="button_variant_white">btn_white</string>
     <string name="button_variant_accent">btn_accent</string>
     <string name="button_variant_danger">btn_danger</string>
@@ -42,8 +45,6 @@ for loud environments</string>
     <string name="intro_permission_button_text">Grant Microphone Access</string>
     <string name="intro_permission_denied_msg">"Microphone permissions are needed for the application to work."</string>
 
-
     <string name="url_about">https://github.com/ffpetrovic/auxilium</string>
-    <string name="url_privacy">https://github.com/ffpetrovic/auxilium/blob/master/PRIVACY.md</string>
 
 </resources>
