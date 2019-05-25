@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.filipetrovic.auxilium.MainActivity">
+    tools:context="com.filipetrovic.auxilium.MainActivity"
+    android:keepScreenOn="true">
 
     <fragment
         android:id="@+id/fragment_tuner_view"
