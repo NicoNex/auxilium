@@ -138,8 +138,8 @@ public class Tuner {
         while (isRecording) {
             if(!isMuted) {
                 amountRead = audioRecord.read(intermediaryBuffer, 0, readSize);
-                buffer = shortArrayToFloatArray(intermediaryBuffer);
-                final TunerResult result = new TunerResult(getPitch(buffer), tunerMode.getNotesObjects(), options);
+//                buffer = shortArrayToFloatArray(intermediaryBuffer);
+                final TunerResult result = new TunerResult(getPitch(intermediaryBuffer), tunerMode.getNotesObjects(), options);
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -347,7 +347,7 @@ public class Tuner {
     }
 
     public void destroy() {
-        cleanupPitch();
+//        cleanupPitch();
     }
 
 
@@ -355,8 +355,7 @@ public class Tuner {
         void onEvent(TunerResult note);
     }
 
-    private native float    getPitch(float[] input);
+    private native float    getPitch(short[] input);
     private native void     initPitch(int sampleRate, int B);
-    private native void     cleanupPitch();
 
 }
